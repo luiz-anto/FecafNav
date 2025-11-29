@@ -39,7 +39,7 @@ var Game = new function() {
     this.height= this.canvas.height;
 
     this.ctx = this.canvas.getContext && this.canvas.getContext('2d');
-    if(!this.ctx) { return alert("Please upgrade your browser to play"); }
+    if(!this.ctx) { return alert("Atualize seu navegador para jogar"); }
 
     this.setupInput();
 
@@ -106,7 +106,7 @@ var Game = new function() {
     if(screen.width >= 1280 || !hasTouch) { return false; }
 
     if(w > h) {
-      alert("Please rotate the device and then click OK");
+      alert("Vire seu dispositivo");
       w = window.innerWidth; h = window.innerHeight;
     }
 
